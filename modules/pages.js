@@ -5,6 +5,7 @@ const contactSection = document.getElementById('contact-section');
 const contact = document.getElementById('contact');
 
 
+
 const booksContainerParent = document.querySelector('.books-container-parent');
 
 const link1 = list.addEventListener('click', (e) => {
@@ -28,4 +29,4 @@ const link3 = contact.addEventListener('click', (e) => {
   form.style.display = 'none';
 });
 
-export { link1, link2, link3 };
+export { link1, link2, link3  };

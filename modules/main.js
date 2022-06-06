@@ -1,13 +1,9 @@
 import Books from './constructor.js'
 import { link1, link2 , link3 } from './pages.js';
+import { DateTime } from './luxon.js';
 
 const booksContainer = document.querySelector('.books-container');
 const form = document.querySelector('form');
-// const list = document.getElementById('list');
-// const addNew = document.getElementById('add-new');
-// const contactSection = document.getElementById('contact-section');
-// const contact = document.getElementById('contact');
-
 
 const book = new Books();
 book.showBooks();
@@ -28,11 +24,16 @@ booksContainer.addEventListener('click', (e) => {
 });
 
 
-function refreshTime() {
+const time = () => {
   const timeDisplay = document.getElementById('time');
-  const dateString = new Date().toLocaleString();
-  const formattedString = dateString.replace(', ', ' - ');
-  timeDisplay.textContent = formattedString;
-}
-setInterval(refreshTime, 1000);
+  timeDisplay.textContent = DateTime.now().toLocaleString({
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric',
+    hour: 'numeric',
+    minute: '2-digit',
+    second: '2-digit',
+  });
+};
+setInterval(time, 1000);
 

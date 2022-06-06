@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body {
+  margin: 0;
+
+  /* padding-left: 1%; */
+  padding: 1.5%;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  margin-bottom: 1%;
+  border: 2px solid;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+form .add {
+  width: 65px;
+  margin-left: 8%;
+}
+
+.books-container {
+  border: 3px solid;
+}
+
+.books-container div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1%;
+  height: 35px;
+}
+
+nav ul {
+  display: inherit;
+  gap: 20px;
+}
+
+.books-container ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 10%;
+}
+
+.books-container div:nth-child(odd) {
+  background: lightgrey;
+}
+
+button {
+  border: 2px solid;
+  height: 30px;
+  width: 10%;
+  -moz-box-shadow: 3px 3px 5px 2px black;
+  -webkit-box-shadow: 3px 3px 5px 2px black;
+  box-shadow: 3px 3px 5px 2px black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid;
+  padding: 0 3%;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.links:active {
+  color: blueviolet;
+}
+
+#contact-section {
+  display: none;
+  text-align: center;
+}
+
+#contact-section ul {
+  list-style: inside;
+  text-align: justify;
+  margin-left: 40%;
+}
+
+footer {
+  position: absolute;
+  width: 96%;
+  bottom: 3px;
+  border: 2px solid;
+  padding: 0 1%;
+}
+
+#time {
+  display: flex;
+  justify-content: flex-end;
+
+  /* width: 100%; */
+
+  /* padding: 2rem 3.2rem 0 0; */
+  font-size: 1.2rem;
+  margin: 1% 0 8%;
+}
